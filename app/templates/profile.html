@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+
+{% block main%}
+ <div id="container">
+     <div id="main">
+        <div id="top">
+            <div id="image">
+                <img src ="{{url_for('static', filename ='me.jpg')}}" alt="Profile photo">
+            </div>
+   
+            <div id="prof-details">
+                <h2>Tiphani Campbell</h2>
+                <p>@teenieMarley</p>
+                <p>St. Andrew, Jamaica</p>
+                <p>Joined {{ date }}</p>
+            </div>
+        </div>
+   
+        <div id="bottom">
+            <div id="bio">
+                <p>I am an intelligent, smart and 
+                    creative woman who loves website design and development.
+                   Contact me if you'd like to work together on a new project</p>
+            </div>
+            <div id="acc_activity">
+                <div id="posts"><p><b>32</b><br>Posts</p></div>
+                <div id="following"><p><b>133</b><br>Following</p></div>
+                <div id="followers"><p><b>600</b><br>Followers</p></div>
+            </div>
+   
+            <div id="follow-btn">
+                <button>Follow</button>
+            </div>
+        </div>
+
+     </div>
+     
+ </div>
+
+ {% endblock %}

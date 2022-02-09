@@ -1,3 +1,122 @@
 body {
     padding-top: 5rem;
 }
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#main{
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 25px;
+    border: 1px 1px 1px 1px grey solid;
+    box-shadow: 2px lightgray;
+}
+
+#top{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-start: 1;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( white, #3b054c);
+    padding-top: 2em;
+    color:white;
+    border-top: gray solid 1px;
+    border-left: gray solid 1px;
+    border-right: gray solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px lightgrey;
+    width: 600px;
+}
+
+#image{
+    display: flex;
+    grid-row-start: 1;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    border-radius: 50%;
+    height: 250px;
+    width: 225px;
+}
+
+#prof-details{
+    grid-row-start: 2;
+    text-align: center;
+    color: white;
+}
+
+#bottom{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-start: 2;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1rem;
+    border-bottom: gray solid 1px;
+    border-right: gray solid 1px;
+    border-left: gray solid 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 2px lightgrey;
+    width: 600px;
+}
+
+#bio{
+    grid-row-start: 1;
+    text-align: center;
+    color: gray;
+}
+
+#acc_activity{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#acc_activity b{
+    color: grey;
+}
+
+#acc_activity p{
+    color: gray;
+}
+
+#posts, #following, #followers{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+#follow-btn{
+    grid-row-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    border-radius: 5px;
+    border: 0rem;
+    background-color: #3b054c;
+    color: white;
+    height: 35px;
+    width: 135px;
+}
